@@ -60,7 +60,10 @@ def deliver_response():
 
 def winner():
 
-    print("Winner is someone!!!")  
+    print("Final Total Score")  
+    print(f"{CONNECTION_LIST[0]['name']} secured {CONNECTION_LIST[0]['total_score']} points ")
+    print(f"{CONNECTION_LIST[1]['name']} secured {CONNECTION_LIST[1]['total_score']} points ")
+    print(f"{CONNECTION_LIST[2]['name']} secured {CONNECTION_LIST[2]['total_score']} points ")
     winner_name=[]
 
     if(CONNECTION_LIST[0]['total_score'] >= CONNECTION_LIST[1]['total_score'] and CONNECTION_LIST[0]['total_score'] >= CONNECTION_LIST[2]['total_score']):
